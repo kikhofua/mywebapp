@@ -1,0 +1,192 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'link',
+1 verbose cli   'body-parser' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.6
+4 verbose install where, what [ '/usr/local/lib', [ 'body-parser' ] ]
+5 verbose install initial load of /usr/local/lib/package.json
+6 verbose installManyTop reading scoped package data from /usr/local/lib/node_modules/npm/package.json
+7 info package.json npm@2.15.5 Non-dependency in bundleDependencies: ansi-regex
+8 info package.json npm@2.15.5 Non-dependency in bundleDependencies: imurmurhash
+9 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+10 silly cache add args [ 'body-parser', null ]
+11 verbose cache add spec body-parser
+12 silly cache add parsed spec Result {
+12 silly cache add   raw: 'body-parser',
+12 silly cache add   scope: null,
+12 silly cache add   name: 'body-parser',
+12 silly cache add   rawSpec: '',
+12 silly cache add   spec: 'latest',
+12 silly cache add   type: 'tag' }
+13 silly addNamed body-parser@latest
+14 verbose addNamed "latest" is being treated as a dist-tag for body-parser
+15 info addNameTag [ 'body-parser', 'latest' ]
+16 silly mapToRegistry name body-parser
+17 silly mapToRegistry using default registry
+18 silly mapToRegistry registry https://registry.npmjs.org/
+19 silly mapToRegistry data Result {
+19 silly mapToRegistry   raw: 'body-parser',
+19 silly mapToRegistry   scope: null,
+19 silly mapToRegistry   name: 'body-parser',
+19 silly mapToRegistry   rawSpec: '',
+19 silly mapToRegistry   spec: 'latest',
+19 silly mapToRegistry   type: 'tag' }
+20 silly mapToRegistry uri https://registry.npmjs.org/body-parser
+21 verbose addNameTag registry:https://registry.npmjs.org/body-parser not in flight; fetching
+22 verbose request uri https://registry.npmjs.org/body-parser
+23 verbose request no auth needed
+24 info attempt registry request try #1 at 3:05:44 PM
+25 verbose request id 0a0fe333f4795c70
+26 verbose etag "4SECJI1J7END5CVY4W2RU6FJ7"
+27 http request GET https://registry.npmjs.org/body-parser
+28 http 200 https://registry.npmjs.org/body-parser
+29 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+29 verbose headers   etag: '"CZV8FVJ868WEDF4FVRZGEVQM4"',
+29 verbose headers   'content-type': 'application/json',
+29 verbose headers   'content-encoding': 'gzip',
+29 verbose headers   'cache-control': 'max-age=300',
+29 verbose headers   'content-length': '16007',
+29 verbose headers   'accept-ranges': 'bytes',
+29 verbose headers   date: 'Wed, 29 Jun 2016 19:05:44 GMT',
+29 verbose headers   via: '1.1 varnish',
+29 verbose headers   age: '281',
+29 verbose headers   connection: 'keep-alive',
+29 verbose headers   'x-served-by': 'cache-atl6220-ATL',
+29 verbose headers   'x-cache': 'HIT',
+29 verbose headers   'x-cache-hits': '10',
+29 verbose headers   'x-timer': 'S1467227144.603600,VS0,VE0',
+29 verbose headers   vary: 'Accept-Encoding' }
+30 silly get cb [ 200,
+30 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+30 silly get     etag: '"CZV8FVJ868WEDF4FVRZGEVQM4"',
+30 silly get     'content-type': 'application/json',
+30 silly get     'content-encoding': 'gzip',
+30 silly get     'cache-control': 'max-age=300',
+30 silly get     'content-length': '16007',
+30 silly get     'accept-ranges': 'bytes',
+30 silly get     date: 'Wed, 29 Jun 2016 19:05:44 GMT',
+30 silly get     via: '1.1 varnish',
+30 silly get     age: '281',
+30 silly get     connection: 'keep-alive',
+30 silly get     'x-served-by': 'cache-atl6220-ATL',
+30 silly get     'x-cache': 'HIT',
+30 silly get     'x-cache-hits': '10',
+30 silly get     'x-timer': 'S1467227144.603600,VS0,VE0',
+30 silly get     vary: 'Accept-Encoding' } ]
+31 verbose get saving body-parser to /Users/207493/.npm/registry.npmjs.org/body-parser/.cache.json
+32 verbose correctMkdir /Users/207493/.npm correctMkdir not in flight; initializing
+33 silly addNameTag next cb for body-parser with tag latest
+34 silly addNamed body-parser@1.15.2
+35 verbose addNamed "1.15.2" is a plain semver version for body-parser
+36 silly cache afterAdd body-parser@1.15.2
+37 verbose afterAdd /Users/207493/.npm/body-parser/1.15.2/package/package.json not in flight; writing
+38 verbose correctMkdir /Users/207493/.npm correctMkdir not in flight; initializing
+39 verbose afterAdd /Users/207493/.npm/body-parser/1.15.2/package/package.json written
+40 silly install resolved [ { name: 'body-parser',
+40 silly install resolved     description: 'Node.js body parsing middleware',
+40 silly install resolved     version: '1.15.2',
+40 silly install resolved     contributors: [ [Object], [Object] ],
+40 silly install resolved     license: 'MIT',
+40 silly install resolved     repository:
+40 silly install resolved      { type: 'git',
+40 silly install resolved        url: 'git+https://github.com/expressjs/body-parser.git' },
+40 silly install resolved     dependencies:
+40 silly install resolved      { bytes: '2.4.0',
+40 silly install resolved        'content-type': '~1.0.2',
+40 silly install resolved        debug: '~2.2.0',
+40 silly install resolved        depd: '~1.1.0',
+40 silly install resolved        'http-errors': '~1.5.0',
+40 silly install resolved        'iconv-lite': '0.4.13',
+40 silly install resolved        'on-finished': '~2.3.0',
+40 silly install resolved        qs: '6.2.0',
+40 silly install resolved        'raw-body': '~2.1.7',
+40 silly install resolved        'type-is': '~1.6.13' },
+40 silly install resolved     devDependencies:
+40 silly install resolved      { eslint: '2.13.0',
+40 silly install resolved        'eslint-config-standard': '5.3.1',
+40 silly install resolved        'eslint-plugin-promise': '1.3.2',
+40 silly install resolved        'eslint-plugin-standard': '1.3.2',
+40 silly install resolved        istanbul: '0.4.3',
+40 silly install resolved        methods: '1.1.2',
+40 silly install resolved        mocha: '2.5.3',
+40 silly install resolved        supertest: '1.1.0' },
+40 silly install resolved     files: [ 'lib/', 'LICENSE', 'HISTORY.md', 'index.js' ],
+40 silly install resolved     engines: { node: '>= 0.8' },
+40 silly install resolved     scripts:
+40 silly install resolved      { lint: 'eslint **/*.js',
+40 silly install resolved        test: 'mocha --require test/support/env --reporter spec --check-leaks --bail test/',
+40 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --require test/support/env --reporter dot --check-leaks test/',
+40 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --require test/support/env --reporter spec --check-leaks test/' },
+40 silly install resolved     gitHead: '3c8218446d919a5e87fa696971fb7f69b10afc1c',
+40 silly install resolved     bugs: { url: 'https://github.com/expressjs/body-parser/issues' },
+40 silly install resolved     homepage: 'https://github.com/expressjs/body-parser#readme',
+40 silly install resolved     _id: 'body-parser@1.15.2',
+40 silly install resolved     _shasum: 'd7578cf4f1d11d5f6ea804cef35dc7a7ff6dae67',
+40 silly install resolved     _from: 'body-parser@latest',
+40 silly install resolved     _npmVersion: '2.15.1',
+40 silly install resolved     _nodeVersion: '4.4.3',
+40 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+40 silly install resolved     dist:
+40 silly install resolved      { shasum: 'd7578cf4f1d11d5f6ea804cef35dc7a7ff6dae67',
+40 silly install resolved        tarball: 'https://registry.npmjs.org/body-parser/-/body-parser-1.15.2.tgz' },
+40 silly install resolved     maintainers: [ [Object] ],
+40 silly install resolved     _npmOperationalInternal:
+40 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+40 silly install resolved        tmp: 'tmp/body-parser-1.15.2.tgz_1466393694089_0.7908455491997302' },
+40 silly install resolved     directories: {},
+40 silly install resolved     _resolved: 'https://registry.npmjs.org/body-parser/-/body-parser-1.15.2.tgz',
+40 silly install resolved     readme: 'ERROR: No README data found!' } ]
+41 info install body-parser@1.15.2 into /usr/local/lib
+42 info installOne body-parser@1.15.2
+43 verbose installOne of body-parser to /usr/local/lib not in flight; installing
+44 verbose correctMkdir /Users/207493/.npm/_locks correctMkdir not in flight; initializing
+45 verbose lock using /Users/207493/.npm/_locks/body-parser-49c530b2cf63a776.lock for /usr/local/lib/node_modules/body-parser
+46 silly install write writing body-parser 1.15.2 to /usr/local/lib/node_modules/body-parser
+47 verbose unbuild y-parser
+48 silly gentlyRm /usr/local/lib/node_modules/body-parser is being purged from base /usr/local/lib/node_modules/body-parser
+49 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/body-parser
+50 verbose tar unpack /Users/207493/.npm/body-parser/1.15.2/package.tgz
+51 verbose tar unpacking to /usr/local/lib/node_modules/body-parser
+52 silly gentlyRm /usr/local/lib/node_modules/body-parser is being purged
+53 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/body-parser
+54 silly gunzTarPerm modes [ '755', '644' ]
+55 error tar.unpack untar error /Users/207493/.npm/body-parser/1.15.2/package.tgz
+56 verbose unlock done using /Users/207493/.npm/_locks/body-parser-49c530b2cf63a776.lock for /usr/local/lib/node_modules/body-parser
+57 verbose fstream_path /usr/local/lib/node_modules/body-parser
+58 verbose fstream_type Directory
+59 verbose fstream_class DirWriter
+60 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/body-parser'
+60 verbose stack     at Error (native)
+61 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+61 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+61 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+62 verbose cwd /Users/207493/Desktop/myWebApp
+63 error Darwin 15.5.0
+64 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "link" "body-parser"
+65 error node v4.4.6
+66 error npm  v2.15.5
+67 error path /usr/local/lib/node_modules/body-parser
+68 error code EACCES
+69 error errno -13
+70 error syscall mkdir
+71 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/body-parser'
+71 error     at Error (native)
+71 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/body-parser']
+71 error   errno: -13,
+71 error   code: 'EACCES',
+71 error   syscall: 'mkdir',
+71 error   path: '/usr/local/lib/node_modules/body-parser',
+71 error   fstream_type: 'Directory',
+71 error   fstream_path: '/usr/local/lib/node_modules/body-parser',
+71 error   fstream_class: 'DirWriter',
+71 error   fstream_stack:
+71 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+71 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+71 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+72 error Please try running this command again as root/Administrator.
+73 verbose exit [ -13, true ]
+74 verbose unbuild y-parser
+75 silly gentlyRm /usr/local/lib/node_modules/body-parser is being purged from base /usr/local/lib/node_modules/body-parser
+76 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/body-parser
